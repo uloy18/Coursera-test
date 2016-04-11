@@ -1,0 +1,117 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%;
+  margin: 14px;
+}
+
+p {
+  padding: 10px;
+  color: #000000;
+  border: 0px solid #000000;
+  }
+
+section {
+  margin: 10px;
+  height: 175px;
+  background-color: gray;
+  border: 1x solid #000000;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#chicken {
+  width: 30%;
+  position:relative;
+  top: 0;
+  left: 70%;
+  background-color: #E9967A;
+  font-size: 125%;
+  text-align: center;
+  border: 1px #000000;
+}
+
+#beef {
+  width: 30%;
+  position:relative;
+  top: 0;
+  left: 70%;
+  background-color: #DDA0DD;
+  font-size: 125%;
+  text-align: center;
+  border: 1px #000000;
+}
+
+#Fish {
+  width: 30%;
+  position:relative;
+  top: 0;
+  left: 70%;
+  background-color: #6495ED;
+  font-size: 125%;
+  text-align: center;
+  border: 1px #000000;
+}
+
+/********** Desktop Version **********/
+@media (min-width: 992px) {
+  .col-dt-4, .col-dt-6, .col-dt-12 {
+    float: left;
+  }
+
+  .col-dt-4 {
+    width: 33.33%;
+  }
+
+  .col-dt-6 {
+    width: 50%;
+  }
+
+  .col-dt-12 {
+    width: 100%;
+  }
+}
+
+/********** Tablet Version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tb-4, .col-tb-6, .col-tb-12 {
+    float: auto; 
+   }
+
+  .col-tb-4 {
+     width: 33.33%;
+  }
+
+  .col-tb-6 {
+    width: 50%;
+  }
+
+  .col-tb-12 {
+    width: 100%;
+  }
+
+}
+   /* Mobile Version */
+@media (max-width: 767px) {
+    .col-mb-4, .col-mb-6, .col-mb-12 {
+        float: left;
+
+    }
+}
